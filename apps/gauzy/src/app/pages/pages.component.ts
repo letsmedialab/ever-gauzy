@@ -40,6 +40,12 @@ interface GaMenuItem extends NbMenuItem {
 	selector: 'ngx-pages',
 	styleUrls: ['pages.component.scss'],
 	template: `
+		<div class='notification-header'>
+			You are using a demo account. Finding our software useful? 
+			<a href="https://github.com/ever-co/ever-gauzy">
+				Click here to Sign Up and start using for free!
+			</a>
+		</div>
 		<ngx-one-column-layout *ngIf="!!menu && user">
 			<nb-menu [items]="menu"></nb-menu>
 			<router-outlet></router-outlet>
